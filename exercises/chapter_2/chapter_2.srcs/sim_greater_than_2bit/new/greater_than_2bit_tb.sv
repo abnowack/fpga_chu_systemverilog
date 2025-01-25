@@ -4,7 +4,7 @@ module greater_than_2bit_tb;
     logic [2:0] test_in0, test_in1;
     logic test_out;
 
-    greater_than_4bit uut(.a(test_in0), .b(test_in1), .eq(test_out));
+    greater_than_2bit uut(.a(test_in0), .b(test_in1), .eq(test_out));
 
     initial
     begin
