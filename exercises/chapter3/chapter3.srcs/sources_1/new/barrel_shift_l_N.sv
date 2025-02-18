@@ -15,7 +15,7 @@ module barrel_shift_l_N
         for (i = 1; i < N; i = i+1)
             begin
                 localparam A = 2**i;
-                assign s[i] = amt[i] ? {s[i-1][M-A:0], s[i-1][M:M-A-1]} : s[i-1];
+                assign s[i] = amt[i] ? {s[i-1][M-A:0], s[i-1][M:M-A+1]} : s[i-1];
             end
     endgenerate
 
